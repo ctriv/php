@@ -3,7 +3,7 @@ package togo
 import (
 	goast "go/ast"
 
-	phpast "github.com/stephens2424/php/ast"
+	phpast "github.com/ctriv/php/ast"
 )
 
 func (t *Togo) ResolveDynamicVar(varName phpast.Expr) goast.Node {

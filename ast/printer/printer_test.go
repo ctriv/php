@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/stephens2424/php/parser"
+	"github.com/ctriv/php/parser"
 )
 
 type Test struct {

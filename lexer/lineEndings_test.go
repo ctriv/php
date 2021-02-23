@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/stephens2424/php/token"
+	"github.com/ctriv/php/token"
 )
 
 func TestLineEndings(t *testing.T) {

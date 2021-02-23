@@ -5,7 +5,7 @@ Parser for PHP written in Go
 
 See [this post](https://stephensearles.com/ive-got-all-this-php-now-what-parsing-php-in-go/) for an introduction.
 
-[![Build Status](https://travis-ci.org/stephens2424/php.svg)](https://travis-ci.org/stephens2424/php) [![GoDoc](https://godoc.org/github.com/stephens2424/php?status.svg)](https://godoc.org/github.com/stephens2424/php)
+[![Build Status](https://travis-ci.org/ctriv/php.svg)](https://travis-ci.org/ctriv/php) [![GoDoc](https://godoc.org/github.com/ctriv/php?status.svg)](https://godoc.org/github.com/ctriv/php)
 
 Test console:
 

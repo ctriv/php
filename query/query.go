@@ -11,7 +11,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/stephens2424/php/ast"
+	"github.com/ctriv/php/ast"
 )
 
 // Q is a node queue

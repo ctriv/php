@@ -13,24 +13,24 @@ panic: too many errors [recovered]
 	panic: too many errors
 
 goroutine 1 [running]:
-github.com/stephens2424/php.func·006()
-	/var/folders/6c/hxwdzv2n4vv363cpjk201md80000gn/T/go-fuzz-build666027188/src/github.com/stephens2424/php/parser.go:97 +0x605
-github.com/stephens2424/php.(*Parser).errorf(0x208400000, 0x249af0, 0x10, 0x0, 0x0, 0x0)
-	/var/folders/6c/hxwdzv2n4vv363cpjk201md80000gn/T/go-fuzz-build666027188/src/github.com/stephens2424/php/parser.go:200 +0xe2
-github.com/stephens2424/php.(*Parser).parseArrayDeclaration(0x208400000, 0x0, 0x0)
-	/var/folders/6c/hxwdzv2n4vv363cpjk201md80000gn/T/go-fuzz-build666027188/src/github.com/stephens2424/php/array.go:60 +0xd2d
-github.com/stephens2424/php.(*Parser).parseOperand(0x208400000, 0x0, 0x0)
-	/var/folders/6c/hxwdzv2n4vv363cpjk201md80000gn/T/go-fuzz-build666027188/src/github.com/stephens2424/php/expression.go:215 +0xe5a
-github.com/stephens2424/php.(*Parser).parseExpression(0x208400000, 0x0, 0x0)
-	/var/folders/6c/hxwdzv2n4vv363cpjk201md80000gn/T/go-fuzz-build666027188/src/github.com/stephens2424/php/expression.go:81 +0xec
-github.com/stephens2424/php.(*Parser).parseStmt(0x208400000, 0x0, 0x0)
-	/var/folders/6c/hxwdzv2n4vv363cpjk201md80000gn/T/go-fuzz-build666027188/src/github.com/stephens2424/php/statements.go:204 +0x1a2b
-github.com/stephens2424/php.(*Parser).parseNode(0x208400000, 0x0, 0x0)
-	/var/folders/6c/hxwdzv2n4vv363cpjk201md80000gn/T/go-fuzz-build666027188/src/github.com/stephens2424/php/parser.go:131 +0x39d
-github.com/stephens2424/php.(*Parser).Parse(0x208400000, 0x241390, 0x8, 0x208398000, 0x14, 0x2083b4390, 0x220838ee18, 0x2083982e0)
-	/var/folders/6c/hxwdzv2n4vv363cpjk201md80000gn/T/go-fuzz-build666027188/src/github.com/stephens2424/php/parser.go:110 +0x5c6
-github.com/stephens2424/php.Fuzz(0x220853c000, 0x14, 0x200000, 0x2083b4510)
-	/var/folders/6c/hxwdzv2n4vv363cpjk201md80000gn/T/go-fuzz-build666027188/src/github.com/stephens2424/php/fuzz.go:21 +0x183
+github.com/ctriv/php.func·006()
+	/var/folders/6c/hxwdzv2n4vv363cpjk201md80000gn/T/go-fuzz-build666027188/src/github.com/ctriv/php/parser.go:97 +0x605
+github.com/ctriv/php.(*Parser).errorf(0x208400000, 0x249af0, 0x10, 0x0, 0x0, 0x0)
+	/var/folders/6c/hxwdzv2n4vv363cpjk201md80000gn/T/go-fuzz-build666027188/src/github.com/ctriv/php/parser.go:200 +0xe2
+github.com/ctriv/php.(*Parser).parseArrayDeclaration(0x208400000, 0x0, 0x0)
+	/var/folders/6c/hxwdzv2n4vv363cpjk201md80000gn/T/go-fuzz-build666027188/src/github.com/ctriv/php/array.go:60 +0xd2d
+github.com/ctriv/php.(*Parser).parseOperand(0x208400000, 0x0, 0x0)
+	/var/folders/6c/hxwdzv2n4vv363cpjk201md80000gn/T/go-fuzz-build666027188/src/github.com/ctriv/php/expression.go:215 +0xe5a
+github.com/ctriv/php.(*Parser).parseExpression(0x208400000, 0x0, 0x0)
+	/var/folders/6c/hxwdzv2n4vv363cpjk201md80000gn/T/go-fuzz-build666027188/src/github.com/ctriv/php/expression.go:81 +0xec
+github.com/ctriv/php.(*Parser).parseStmt(0x208400000, 0x0, 0x0)
+	/var/folders/6c/hxwdzv2n4vv363cpjk201md80000gn/T/go-fuzz-build666027188/src/github.com/ctriv/php/statements.go:204 +0x1a2b
+github.com/ctriv/php.(*Parser).parseNode(0x208400000, 0x0, 0x0)
+	/var/folders/6c/hxwdzv2n4vv363cpjk201md80000gn/T/go-fuzz-build666027188/src/github.com/ctriv/php/parser.go:131 +0x39d
+github.com/ctriv/php.(*Parser).Parse(0x208400000, 0x241390, 0x8, 0x208398000, 0x14, 0x2083b4390, 0x220838ee18, 0x2083982e0)
+	/var/folders/6c/hxwdzv2n4vv363cpjk201md80000gn/T/go-fuzz-build666027188/src/github.com/ctriv/php/parser.go:110 +0x5c6
+github.com/ctriv/php.Fuzz(0x220853c000, 0x14, 0x200000, 0x2083b4510)
+	/var/folders/6c/hxwdzv2n4vv363cpjk201md80000gn/T/go-fuzz-build666027188/src/github.com/ctriv/php/fuzz.go:21 +0x183
 github.com/dvyukov/go-fuzz/go-fuzz-dep.Main(0x27ee90)
 	/Users/stephen/go/src/github.com/dvyukov/go-fuzz/go-fuzz-dep/main.go:44 +0x13d
 main.main()

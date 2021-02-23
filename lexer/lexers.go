@@ -5,7 +5,7 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/stephens2424/php/token"
+	"github.com/ctriv/php/token"
 )
 
 // longestToken is length of the longest token string
@@ -119,8 +119,8 @@ func lexPHP(l *lexer) stateFn {
 
 func isOperator(t token.Token) bool {
 	_, ok := map[token.Token]struct{}{
-		token.VariableOperator: struct{}{},
-		token.ObjectOperator: struct{}{},
+		token.VariableOperator:        struct{}{},
+		token.ObjectOperator:          struct{}{},
 		token.ScopeResolutionOperator: struct{}{},
 	}[t]
 
@@ -156,7 +156,7 @@ func hasKeyword(l *lexer) (token.Token, bool) {
 			return t, true
 		}
 
-		if (isOperator(l.getPrevious().Typ)) {
+		if isOperator(l.getPrevious().Typ) {
 			// if the keyword is preceded by a variable
 			// operator, object operator, or scope resolution
 			// operator, we actually have an identifier.

@@ -7,8 +7,8 @@ import (
 	"log"
 	"os"
 
-	"github.com/stephens2424/php/ast/printer"
-	"github.com/stephens2424/php/parser"
+	"github.com/ctriv/php/ast/printer"
+	"github.com/ctriv/php/parser"
 )
 
 func main() {

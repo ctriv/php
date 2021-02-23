@@ -1,8 +1,8 @@
 package parser
 
 import (
-	"github.com/stephens2424/php/ast"
-	"github.com/stephens2424/php/token"
+	"github.com/ctriv/php/ast"
+	"github.com/ctriv/php/token"
 )
 
 func (p *Parser) parseArrayLookup(e ast.Expr) ast.Expr {

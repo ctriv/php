@@ -9,9 +9,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/stephens2424/php/ast"
-	"github.com/stephens2424/php/parser"
-	"github.com/stephens2424/php/query"
+	"github.com/ctriv/php/ast"
+	"github.com/ctriv/php/parser"
+	"github.com/ctriv/php/query"
 )
 
 func main() {

@@ -1,6 +1,6 @@
 package deadcode
 
-import "github.com/stephens2424/php/ast"
+import "github.com/ctriv/php/ast"
 
 // DeadClasses returns a list of dead classes
 func DeadClasses(fs *ast.FileSet, entryPoints []string) []ast.Node {

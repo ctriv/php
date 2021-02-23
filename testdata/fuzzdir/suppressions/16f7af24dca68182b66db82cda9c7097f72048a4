@@ -1,13 +1,13 @@
 panic: too many errors [recovered]
-github.com/stephens2424/php.func·006
-github.com/stephens2424/php.(*Parser).errorf
-github.com/stephens2424/php.(*Parser).expected
-github.com/stephens2424/php.(*Parser).expectCurrent
-github.com/stephens2424/php.(*Parser).parseExpressionsUntil
-github.com/stephens2424/php.(*Parser).parseFor
-github.com/stephens2424/php.(*Parser).parseStmt
-github.com/stephens2424/php.(*Parser).parseNode
-github.com/stephens2424/php.(*Parser).Parse
-github.com/stephens2424/php.Fuzz
+github.com/ctriv/php.func·006
+github.com/ctriv/php.(*Parser).errorf
+github.com/ctriv/php.(*Parser).expected
+github.com/ctriv/php.(*Parser).expectCurrent
+github.com/ctriv/php.(*Parser).parseExpressionsUntil
+github.com/ctriv/php.(*Parser).parseFor
+github.com/ctriv/php.(*Parser).parseStmt
+github.com/ctriv/php.(*Parser).parseNode
+github.com/ctriv/php.(*Parser).Parse
+github.com/ctriv/php.Fuzz
 github.com/dvyukov/go-fuzz/go-fuzz-dep.Main
 main.main

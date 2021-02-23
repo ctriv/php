@@ -9,8 +9,8 @@ import (
 	"io"
 	"strings"
 
-	phpast "github.com/stephens2424/php/ast"
-	"github.com/stephens2424/php/parser"
+	phpast "github.com/ctriv/php/ast"
+	"github.com/ctriv/php/parser"
 	"golang.org/x/tools/imports"
 )
 

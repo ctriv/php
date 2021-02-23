@@ -6,7 +6,7 @@ import (
 	"io"
 	"strings"
 
-	"github.com/stephens2424/php/ast"
+	"github.com/ctriv/php/ast"
 )
 
 // Printer is a printer

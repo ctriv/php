@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"path"
 
-	"github.com/stephens2424/php/ast"
-	"github.com/stephens2424/php/lexer"
-	"github.com/stephens2424/php/token"
+	"github.com/ctriv/php/ast"
+	"github.com/ctriv/php/lexer"
+	"github.com/ctriv/php/token"
 )
 
 // Parser handles scanning through and parsing a PHP source string into an AST. It is configurable

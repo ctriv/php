@@ -3,7 +3,7 @@ package typecheck
 import (
 	"fmt"
 
-	"github.com/stephens2424/php/ast"
+	"github.com/ctriv/php/ast"
 )
 
 // Walker is a walker
