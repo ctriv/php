@@ -138,6 +138,29 @@ func TestExtraModifiers(t *testing.T) {
 	}
 }
 
+func TestExtends(t *testing.T) {
+	testStr := `<?
+		class TestClass extends otherclass {
+		}
+	`
+
+	p := NewParser()
+	p.disableScoping = true
+	a, err := p.Parse("test.php", testStr)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if len(a.Nodes) != 1 {
+		t.Fatalf("Class did not correctly parse")
+	}
+
+	found := a.Nodes[0].(*ast.Class).Extends
+
+	if found != "otherclass" {
+		t.Fatalf("Extends should be `otherclass`, found: `%s`", found)
+	}
+}
+
 func TestInstantiation(t *testing.T) {
 	testStr := `<?
   $obj = new Obj::$classes['obj']($arg);`

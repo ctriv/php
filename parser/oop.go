@@ -44,9 +44,11 @@ func (p *Parser) parseClass() *ast.Class {
 	}
 
 	name := p.current.Val
+	extends := ""
 	if p.peek().Typ == token.Extends {
 		p.expect(token.Extends)
 		p.expect(token.Identifier)
+		extends = p.current.Val
 	}
 	if p.peek().Typ == token.Implements {
 		p.expect(token.Implements)
@@ -57,7 +59,10 @@ func (p *Parser) parseClass() *ast.Class {
 		}
 	}
 	p.expect(token.BlockBegin)
-	c := p.parseClassFields(&ast.Class{Name: name})
+	c := p.parseClassFields(&ast.Class{
+		Name:    name,
+		Extends: extends,
+	})
 	p.namespace.ClassesAndInterfaces[c.Name] = c
 	return c
 }
